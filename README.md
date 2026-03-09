@@ -11,8 +11,15 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 
 ## Current Manuscript
 
-- `manuscript/current/nrr-projection_manuscript_v19.tex`
-- `manuscript/current/nrr-projection_manuscript_v19.pdf`
+- `manuscript/current/nrr-projection_manuscript_v20.tex`
+- `manuscript/current/nrr-projection_manuscript_v20.pdf`
+- `manuscript/current/checksums_sha256.txt`
+
+## Reproducibility
+
+- Build command: `tectonic -X compile manuscript/current/nrr-projection_manuscript_v20.tex`
+- Current checksum manifest: `manuscript/current/checksums_sha256.txt`
+- This repository currently tracks the manuscript package only; no new Projection-specific experiment assets are required for the theory paper.
 
 ## Notes
 
