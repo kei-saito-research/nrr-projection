@@ -1,6 +1,7 @@
 # NRR-Projection
 
 Local workspace for the `NRR-Projection` theory line.
+This line is positioned as a companion paper to `NRR-Phi` and a bridge paper connecting the Phi state ontology to the empirical boundary patterns reported in `NRR-Boundary`.
 
 ## Structure
 
@@ -10,8 +11,9 @@ Local workspace for the `NRR-Projection` theory line.
 
 ## Current Manuscript
 
-- `manuscript/current/nrr-projection_manuscript_v7.tex`
-- `manuscript/current/nrr-projection_manuscript_v7.pdf`
+- `manuscript/current/nrr-projection_manuscript_v18.tex`
+- `manuscript/current/nrr-projection_manuscript_v18.pdf`
+- `artifacts/reviewpacks/nrr-projection_manuscript_v18_reviewpack.zip`
 
 ## Notes
 
