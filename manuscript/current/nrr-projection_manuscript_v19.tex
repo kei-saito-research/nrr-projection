@@ -318,12 +318,12 @@ rework\_cost\_tokens & 85.5 & positive \\
 stability\_variance & 0.0153 & positive \\
 \bottomrule
 \end{tabular}
-\caption{Conditional-first stable cases for \texttt{conditional\_branch} with provider-balanced improvement means. Data from NRR-Boundary \cite{saito2026boundary}; reproduced from existing Boundary results for post hoc reinterpretation, not from new experiments conducted for this paper. Source file: \texttt{stats/combo\_rep3\_all/mst\_tau\_trace\_provider\_balanced.csv} in the NRR-Boundary repository.}
+\caption{Conditional-first metric-specific cases for \texttt{conditional\_branch} with provider-balanced improvement means. Data from NRR-Boundary \cite{saito2026boundary}; reproduced from existing Boundary results for post hoc reinterpretation, not from new experiments conducted for this paper. Source file: \texttt{stats/combo\_rep3\_all/mst\_tau\_trace\_provider\_balanced.csv} in the NRR-Boundary repository.}
 \label{tab:boundary_conditional_first}
 \end{table}
 
 A compatible projection-side reading, again condition-bounded, is as follows. If the conditional view retains discriminative structure that later branching decisions need, then preserving that view earlier can reduce downstream flattening and thereby improve later identification and update stability on some metrics, while still leaving other metrics unchanged or worse. This is not a proof of the projection theory. It is a compatible reading of already observed evidence.
-This does not elevate conditional-first ordering into a general rule; the stable improvement observed here is specific to the metrics and providers in the Boundary dataset.
+This does not elevate conditional-first ordering into a general rule; the metric-specific improvement observed here is specific to the metrics and providers in the Boundary dataset.
 
 \section{Limits and Non-Claims}
 \label{sec:limits}
