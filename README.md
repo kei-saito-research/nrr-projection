@@ -11,8 +11,8 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 
 ## Current Manuscript
 
-- `manuscript/current/nrr-projection_manuscript_v18.tex`
-- `manuscript/current/nrr-projection_manuscript_v18.pdf`
+- `manuscript/current/nrr-projection_manuscript_v19.tex`
+- `manuscript/current/nrr-projection_manuscript_v19.pdf`
 
 ## Notes
 
