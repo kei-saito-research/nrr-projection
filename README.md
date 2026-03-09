@@ -13,9 +13,9 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 
 - `manuscript/current/nrr-projection_manuscript_v18.tex`
 - `manuscript/current/nrr-projection_manuscript_v18.pdf`
-- `artifacts/reviewpacks/nrr-projection_manuscript_v18_reviewpack.zip`
 
 ## Notes
 
 - This workspace is organized as a standalone git-managed line so Projection can be versioned independently from the parent workspace.
 - The parent workspace `.gitignore` ignores `nrr-*`, so this folder is intentionally managed as its own repository.
+- Reviewpack zip bundles are handoff artifacts and may be produced outside the committed git tree.
