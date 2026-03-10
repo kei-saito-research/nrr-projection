@@ -17,8 +17,8 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 
 ## Reproducibility
 
-- Build command: `tectonic -X compile manuscript/current/nrr-projection_manuscript_v20.tex`
-- Current checksum manifest: `manuscript/current/checksums_sha256.txt`
+- Build command: `bash scripts/build_current_manuscript.sh`
+- Current checksum manifest: `bash scripts/verify_current_package.sh`
 - This repository currently tracks the manuscript package only; no new Projection-specific experiment assets are required for the theory paper.
 
 ## Notes
@@ -26,3 +26,7 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 - This workspace is organized as a standalone git-managed line so Projection can be versioned independently from the parent workspace.
 - The parent workspace `.gitignore` ignores `nrr-*`, so this folder is intentionally managed as its own repository.
 - Reviewpack zip bundles are handoff artifacts and may be produced outside the committed git tree.
+
+Stable review-package entrypoints:
+- `bash scripts/build_current_manuscript.sh`
+- `bash scripts/verify_current_package.sh`
