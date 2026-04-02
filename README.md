@@ -10,8 +10,8 @@ This line is positioned as a companion paper to `NRR-Phi` and a bridge paper con
 
 ## Current Manuscript
 
-- `manuscript/current/nrr-projection_manuscript_v26.tex`
-- `manuscript/current/nrr-projection_manuscript_v26.pdf`
+- `manuscript/current/nrr-projection_manuscript_v27.tex`
+- `manuscript/current/nrr-projection_manuscript_v27.pdf`
 - `manuscript/checksums_active_review_surface_sha256.txt`
 - `manuscript/checksums_current_package_sha256.txt`
 - `manuscript/current/` keeps only the active `.tex` / `.pdf` pair.

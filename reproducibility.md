@@ -10,7 +10,7 @@ The manuscript discusses historical Boundary evidence as an external source surf
 
 - Build the current manuscript to temp output:
   - `bash scripts/build_current_manuscript.sh`
-  - output: `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v26.pdf`
+  - output: `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v27.pdf`
 - Verify the active review surface:
   - `bash scripts/verify_active_review_surface.sh`
 - Verify the current review-package checksum manifest:
@@ -18,8 +18,8 @@ The manuscript discusses historical Boundary evidence as an external source surf
 
 ## Current review package
 
-- Main TeX: `manuscript/current/nrr-projection_manuscript_v26.tex`
-- Current PDF snapshot: `manuscript/current/nrr-projection_manuscript_v26.pdf`
+- Main TeX: `manuscript/current/nrr-projection_manuscript_v27.tex`
+- Current PDF snapshot: `manuscript/current/nrr-projection_manuscript_v27.pdf`
 - Active review checksum manifest: `manuscript/checksums_active_review_surface_sha256.txt`
 - Current package checksum manifest: `manuscript/checksums_current_package_sha256.txt`
 - `manuscript/current/` is latest-only and contains only the active manuscript `.tex` / `.pdf` pair.
@@ -43,12 +43,12 @@ bash scripts/build_current_manuscript.sh
 ```
 
 Default temp output:
-- `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v26.pdf`
+- `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v27.pdf`
 
 ## Current manuscript package details
 
-- Main TeX: `manuscript/current/nrr-projection_manuscript_v26.tex`
-- PDF snapshot: `manuscript/current/nrr-projection_manuscript_v26.pdf`
+- Main TeX: `manuscript/current/nrr-projection_manuscript_v27.tex`
+- PDF snapshot: `manuscript/current/nrr-projection_manuscript_v27.pdf`
 - Active review checksum manifest: `manuscript/checksums_active_review_surface_sha256.txt`
 - Current package checksum manifest: `manuscript/checksums_current_package_sha256.txt`
 
@@ -56,10 +56,10 @@ Default temp output:
 
 | Artifact | Command | Output |
 |---|---|---|
-| Current manuscript build | `bash scripts/build_current_manuscript.sh` | `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v26.pdf` |
+| Current manuscript build | `bash scripts/build_current_manuscript.sh` | `/tmp/nrr-projection_current_build/nrr-projection_manuscript_v27.pdf` |
 | Active review surface verification | `bash scripts/verify_active_review_surface.sh` | stdout verification for `manuscript/checksums_active_review_surface_sha256.txt` plus latest-only checks on `manuscript/current/` |
 | Current package checksum verification | `bash scripts/verify_current_package.sh` | stdout verification for `manuscript/checksums_current_package_sha256.txt` |
-| Current manuscript source snapshot | N/A (tracked artifact) | `manuscript/current/nrr-projection_manuscript_v26.tex` |
+| Current manuscript source snapshot | N/A (tracked artifact) | `manuscript/current/nrr-projection_manuscript_v27.tex` |
 
 Verify the tracked package:
 
