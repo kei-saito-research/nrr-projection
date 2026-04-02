@@ -1,12 +1,12 @@
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage[numbers]{natbib}
 \usepackage{tikz}
+\usepackage{xurl}
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 
 \geometry{
@@ -15,6 +15,7 @@
   top=2.5cm,
   bottom=2.5cm
 }
+\setlength{\emergencystretch}{3em}
 
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
@@ -24,12 +25,13 @@
 \title{\textbf{NRR-Projection: Projection Retention, State Reduction, and Identifiability in Non-Resolution Reasoning}}
 
 \author{
-  Kei Saito\thanks{ORCID: 0009-0006-4715-9176} \\
+  Kei Saito \\
   Independent Researcher, Japan \\
+  ORCID: 0009-0006-4715-9176 \\
   \texttt{kei.saito.research@gmail.com}
 }
 
-\date{March 2026 \\[0.5em]
+\date{April 3, 2026 \\[0.5em]
 \textit{Part of the Non-Resolution Reasoning (NRR) research program.}}
 
 \begin{document}
@@ -46,7 +48,7 @@ NRR-Phi \cite{saito2026phi} defined a text-to-state mapping in which multiple ad
 
 We distinguish non-destructive output projection, which emits one interpretation while preserving internal state, from destructive collapse, which removes non-selected alternatives from the retained state. Under a task-conditioned distribution on admissible states, we show that a retained family of projections is at least as informative about the state as any one of its member projections alone. We additionally show that when a projection family is separating on the admissible state set, it identifies distinctions that any non-injective single projection cannot preserve by itself. Read in the analytical correspondence where destructive reduction is treated as retention of a single view, these results provide a condition-bounded explanation for why premature reduction can be information-disadvantageous.
 
-To connect the theory to existing evidence without overclaiming, we reinterpret already reported package-first results now carried around integrated paper7 \cite{saito2026boundary}. In particular, provider-by-order sign flips and conditional-first metric-dependent differences can be read as differences in retained view order and state-flattening behavior. This section is explicitly post hoc and is not presented as a confirmatory test of the theory.
+To connect the theory to existing evidence without overclaiming, we reinterpret already reported package-first results now carried in NRR-Patterns \cite{saito2026patterns}. In particular, provider-by-order sign flips and conditional-first metric-dependent differences can be read as differences in retained view order and state-flattening behavior. This section is explicitly post hoc and is not presented as a confirmatory test of the theory.
 
 NRR is not an anti-LLM framework. NRR does not replace standard LLM use. In the narrower fixed-evidence setting studied here, the practical issue is whether output can remain state-preserving long enough to avoid premature destructive reduction.
 \end{abstract}
@@ -68,10 +70,13 @@ NRR optimizes when to commit and when to defer, under explicit conditions.
 
 NRR is a derivation-and-evaluation framework, not a closed recipe.
 The projection family analyzed here is an evaluated family under the stated conditions, not an exhaustive set; extension claims require the same fixed protocol and condition-bounded reporting.
-Within the NRR series, this paper is positioned as a companion line to NRR-Phi and a bridge line linking the Phi state ontology to the comparison-and-boundary surfaces now consolidated in integrated paper7, which then carry forward into Energy's operational-control / conditional-utility calibration role and Guarantee's bounded verification / assurance closure role.
+Within the NRR series, this paper is positioned as a companion line to NRR-Phi and a bridge line linking the Phi state ontology to the comparison-and-boundary surfaces now consolidated in NRR-Patterns, which then carry forward into Energy's operational-control / conditional-utility calibration role and Guarantee's bounded verification / assurance closure role.
 
 \textbf{Series Consistency Statement:}
 Unsupported interpretations are never injected at a fixed evidence state, hypothesis-set expansion is evidence-gated, and unobserved possibilities remain explicitly unresolved. In this paper, the evidence state is fixed before analysis, admissible views are taken only over evidence-consistent states, and no gain claim relies on adding unsupported alternatives.
+
+\textbf{Series Extensibility Statement:}
+NRR is a derivation-and-evaluation framework, not a closed recipe; the current projection family and comparison frame are evaluated under the stated conditions, not claimed as an exhaustive set.
 
 \subsection{Contributions}
 
@@ -81,7 +86,7 @@ Unsupported interpretations are never injected at a fixed evidence state, hypoth
   \item A theorem showing identifiability gain when the retained projection family is separating on the admissible state set.
   \item A state-reduction remark making explicit that destructive collapse can erase alternative-sensitive structure needed by later operations.
   \item A cost-bounded remark clarifying why the framework implies conditional utility rather than universal superiority.
-  \item A post hoc reinterpretation of existing package-first results now carried around integrated paper7 \cite{saito2026boundary} as an empirical contact point for the theory.
+  \item A post hoc reinterpretation of existing package-first results now carried in NRR-Patterns \cite{saito2026patterns} as an empirical contact point for the theory.
 \end{enumerate}
 
 \section{Relation to NRR-Phi}
@@ -261,16 +266,16 @@ U = G(\text{information retained}) - \lambda \cdot \text{Cost}(\text{retention})
 with $\lambda > 0$. If $G$ is increasing in retained information and $\text{Cost}$ is increasing in the number of retained views, then the sign of the utility difference depends on the operating regime. This paper does not prove the existence of both retention-favoring and collapse-favoring regimes as a theorem; it observes that the framework is structurally compatible with both, which is necessary for consistency with the NRR guardrail that non-resolution is conditionally useful rather than universally superior. The form of this tradeoff is also consistent with information bottleneck style reasoning, where retained information is balanced against compression cost rather than treated as unconditionally desirable \cite{tishby1999information}.
 \end{remark}
 
-\section{Integrated paper7 Package Reinterpretation}
+\section{NRR-Patterns Package Reinterpretation}
 \label{sec:boundary}
 
-The preceding results are mathematical and do not require experiment to stand. However, theory-only presentation can look disconnected from the existing NRR empirical line. To provide a limited empirical contact point, this section reinterprets already reported package-first results now carried around integrated paper7 \cite{saito2026boundary} through the projection framework.
+The preceding results are mathematical and do not require experiment to stand. However, theory-only presentation can look disconnected from the existing NRR empirical line. To provide a limited empirical contact point, this section reinterprets already reported package-first results now carried in NRR-Patterns \cite{saito2026patterns} through the projection framework.
 
-\textbf{Important scope note:} this section is a post hoc reinterpretation of existing results, not a confirmatory test of NRR-Projection. It shows only that the framework can organize already observed empirical regularities. The relevant order-sensitive rows come from the historical Boundary line, but they are used here only as a package-first contact surface around integrated paper7 rather than as a preferred standalone target. No formal mapping between the operators (\texttt{conditional}, \texttt{branch}) and specific projection family members $P_a$ is defined in this paper. The readings below are therefore analogical: they show that the Projection vocabulary can organize the observed patterns, not that the patterns deductively follow from the theorems. A direct empirical test would require a separately fixed Projection-specific design.
+\textbf{Important scope note:} this section is a post hoc reinterpretation of existing results, not a confirmatory test of NRR-Projection. It shows only that the framework can organize already observed empirical regularities. The relevant order-sensitive rows are carried in NRR-Patterns, with some of them inherited from earlier Boundary experiments, but they are used here only as a package-first contact surface rather than as a preferred standalone target. No formal mapping between the operators (\texttt{conditional}, \texttt{branch}) and specific projection family members $P_a$ is defined in this paper. The readings below are therefore analogical: they show that the Projection vocabulary can organize the observed patterns, not that the patterns deductively follow from the theorems. A direct empirical test would require a separately fixed Projection-specific design.
 
 \subsection{Order-sensitive sign flips}
 
-The historical Boundary line, now treated as package-first supporting material around integrated paper7 \cite{saito2026boundary}, reported ordered-combination cases in which the same operator set changed sign when the order changed. In particular, the pattern \texttt{branch\_conditional} showed sign-flip boundaries on several metrics, with Gemini moving opposite to Anthropic/OpenAI on rows including \texttt{irp\_monotonic\_progress\_rate}, \texttt{irp\_oscillation\_rate}, \texttt{misinterpretation\_rate}, \texttt{rework\_cost\_tokens}, and \texttt{stability\_variance}.
+NRR-Patterns \cite{saito2026patterns} reports ordered-combination cases in which the same operator set changes sign when the order changes. In particular, the pattern \texttt{branch\_conditional} shows sign-flip boundaries on several metrics, with Gemini moving opposite to Anthropic/OpenAI on rows including \texttt{irp\_monotonic\_progress\_rate}, \texttt{irp\_oscillation\_rate}, \texttt{misinterpretation\_rate}, \texttt{rework\_cost\_tokens}, and \texttt{stability\_variance}.
 
 These values are reproduced from existing package-first results, not from new experiments conducted for this paper.
 
@@ -288,7 +293,7 @@ rework\_cost\_tokens & $+$ & $+$ & $-$ \\
 stability\_variance & $+$ & $+$ & $-$ \\
 \bottomrule
 \end{tabular}
-\caption{All sign-flip cases for \texttt{branch\_conditional} in the bundled rep3 Boundary summary. Data from the historical Boundary line carried as package-first supporting material around integrated paper7 \cite{saito2026boundary}; reproduced for post hoc reinterpretation, not from new experiments conducted for this paper. Signs denote metric-aligned improvement direction in the historical Boundary summaries ($+$ = improvement, $-$ = degradation), not raw metric increase/decrease. Signs reflect rep3 aggregation; rep1 shows zero for some OpenAI rows on these metrics. Source file: \texttt{stats/combo\_rep3\_all/mst\_sign\_flip\_boundaries.csv} in the historical NRR-Boundary repository.}
+\caption{All sign-flip cases for \texttt{branch\_conditional} in the bundled rep3 Boundary summary. Data as reported in NRR-Patterns \cite{saito2026patterns}; reproduced for post hoc reinterpretation, not from new experiments conducted for this paper. Signs denote metric-aligned improvement direction in the reported summaries ($+$ = improvement, $-$ = degradation), not raw metric increase/decrease. Signs reflect rep3 aggregation; rep1 shows zero for some OpenAI rows on these metrics. Source file path reported for the inherited Boundary-origin summary: \protect\path{stats/combo_rep3_all/mst_sign_flip_boundaries.csv}.}
 \label{tab:boundary_signflip}
 \end{table}
 
@@ -296,12 +301,14 @@ A compatible projection-side reading is as follows. Order changes which partial 
 
 \subsection{Conditional-first metric-specific improvements}
 
-The same historical package-first surface around integrated paper7 \cite{saito2026boundary} also reported that \texttt{conditional\_branch} showed no sign-flip boundary on several practical metrics. At the same time, it showed a negative provider-balanced improvement mean on \texttt{irp\_monotonic\_progress\_rate} ($-0.0513$), so the profile discussed here is metric-specific rather than uniformly favorable. It also showed provider-balanced improvements on:
+NRR-Patterns \cite{saito2026patterns} also reports that \texttt{conditional\_branch} shows no sign-flip boundary on several practical metrics.
+At the same time, it showed a negative provider-balanced improvement mean on \path{irp_monotonic_progress_rate} ($-0.0513$), so the profile discussed here is metric-specific rather than uniformly favorable.
+It also showed provider-balanced improvements on:
 \begin{itemize}
-  \item \texttt{irp\_oscillation\_rate}
-  \item \texttt{misinterpretation\_rate}
-  \item \texttt{rework\_cost\_tokens}
-  \item \texttt{stability\_variance}
+  \item \path{irp_oscillation_rate}
+  \item \path{misinterpretation_rate}
+  \item \path{rework_cost_tokens}
+  \item \path{stability_variance}
 \end{itemize}
 
 These values are reproduced from existing package-first results, not from new experiments conducted for this paper.
@@ -319,14 +326,14 @@ rework\_cost\_tokens & 85.5 & positive \\
 stability\_variance & 0.0153 & positive \\
 \bottomrule
 \end{tabular}
-\caption{Conditional-first metric-specific cases for \texttt{conditional\_branch} with provider-balanced improvement means. Data from the historical Boundary line carried as package-first supporting material around integrated paper7 \cite{saito2026boundary}; reproduced for post hoc reinterpretation, not from new experiments conducted for this paper. Source file: \texttt{stats/combo\_rep3\_all/mst\_tau\_trace\_provider\_balanced.csv} in the historical NRR-Boundary repository.}
+\caption{Conditional-first metric-specific cases for \texttt{conditional\_branch} with provider-balanced improvement means. Data as reported in NRR-Patterns \cite{saito2026patterns}; reproduced for post hoc reinterpretation, not from new experiments conducted for this paper. Source file path reported for the inherited Boundary-origin summary: \protect\path{stats/combo_rep3_all/mst_tau_trace_provider_balanced.csv}.}
 \label{tab:boundary_conditional_first}
 \end{table}
 
 A compatible projection-side reading, again condition-bounded, is as follows. If the conditional view retains discriminative structure that later branching decisions need, then preserving that view earlier can reduce downstream flattening and thereby improve later identification and update stability on some metrics, while still leaving other metrics unchanged or worse. This is not a proof of the projection theory. It is a compatible reading of already observed evidence.
 This does not elevate conditional-first ordering into a general rule; the metric-specific improvement observed here is specific to the metrics and providers in the historical Boundary dataset.
 
-\section{Limits and Non-Claims}
+\section{Limitations}
 \label{sec:limits}
 
 This paper makes several explicit non-claims.
@@ -344,45 +351,51 @@ Theorems~\ref{thm:monotonicity} and~\ref{thm:ident} show structural facts about 
 The separating condition in Theorem~\ref{thm:ident} is a sufficient condition for identifiability, not a claim that separating families are routinely available in all operational settings.
 Accordingly, the safe non-evaluative read of this paper is narrow: retained state need not be reduced by repeated full comparative checking while evidence remains fixed or still accumulating, but the present results do not settle a general runtime or deployment policy question.
 
-The integrated paper7 package reinterpretation section is especially limited. Because it is post hoc, it cannot serve as a confirmatory test of the theory. A future empirical test would need to manipulate retained-view number, retained-view order, or collapse timing under a fixed protocol designed in advance for Projection-specific hypotheses.
+The NRR-Patterns package reinterpretation section is especially limited. Because it is post hoc, it cannot serve as a confirmatory test of the theory. A future empirical test would need to manipulate retained-view number, retained-view order, or collapse timing under a fixed protocol designed in advance for Projection-specific hypotheses.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
 This paper isolates one narrow theoretical contribution within the NRR program. Starting from the state ontology defined by NRR-Phi \cite{saito2026phi} and adding an analytical framework of projection families and task-conditioned distributions, it shows why a retained family of admissible projections can preserve distinctions that a single retained view does not. Read through the analytical correspondence developed in this paper, this clarifies why premature destructive reduction can be costly under some conditions. The core result is not that non-resolution is universally superior. The result is that information retention and identifiability can favor non-destructive retention under some conditions, while other regimes can rationally favor collapse.
 
-The practical role of this paper is therefore foundational rather than replacement-oriented. NRR-Core \cite{saito2025nrr} defined the program, NRR-Phi \cite{saito2026phi} defined the state machinery, and NRR-Projection explains one reason why premature destructive reduction can be costly. In the narrower non-evaluative series read, that role is to support a structural bridge: retained multi-view state need not be understood as repeated full branchwise comparative evaluation during retention. Existing package-first results around integrated paper7 \cite{saito2026boundary} provide a compatible empirical contact point, and the downstream operational-control and bounded-assurance roles belong to Energy and Guarantee rather than to this paper. A direct confirmatory test of the present theory remains future work. This is not an ordering-recommendation paper; the connection is interpretive rather than prescriptive.
+The practical role of this paper is therefore foundational rather than replacement-oriented. NRR-Core \cite{saito2025nrr} defined the program, NRR-Phi \cite{saito2026phi} defined the state machinery, and NRR-Projection explains one reason why premature destructive reduction can be costly. In the narrower non-evaluative series read, that role is to support a structural bridge: retained multi-view state need not be understood as repeated full branchwise comparative evaluation during retention. Existing package-first results reported in NRR-Patterns \cite{saito2026patterns} provide a compatible empirical contact point, and the downstream operational-control and bounded-assurance roles belong to Energy and Guarantee rather than to this paper. A direct confirmatory test of the present theory remains future work. This is not an ordering-recommendation paper; the connection is interpretive rather than prescriptive.
 
-\begin{thebibliography}{9}
+\section*{Acknowledgments}
+
+The author acknowledges language refinement, formatting support, and proofreading assistance from Claude (Anthropic), ChatGPT/Codex (OpenAI), and Gemini (Google). All claims, judgments, and final decisions in this manuscript remain solely the responsibility of the author.
+
+\begin{thebibliography}{99}
+\raggedright
 
 \bibitem{saito2025nrr}
-K.~Saito.
-\newblock NRR-Core: Non-Resolution Reasoning as a Computational Framework for Contextual Identity and Ambiguity Preservation.
-\newblock arXiv preprint arXiv:2512.13478, 2025.
+K.~Saito,
+\newblock ``NRR-Core: Non-Resolution Reasoning as a Computational Framework for Contextual Identity and Ambiguity Preservation,''
+\newblock \emph{arXiv:2512.13478}, 2025.
 
 \bibitem{saito2026phi}
-K.~Saito.
-\newblock NRR-Phi: Text-to-state mapping for ambiguity preservation in LLM inference.
-\newblock arXiv preprint arXiv:2601.19933, 2026.
+K.~Saito,
+\newblock ``NRR-Phi: Text-to-State Mapping for Ambiguity Preservation in LLM Inference,''
+\newblock \emph{arXiv:2601.19933}, 2026.
 
-\bibitem{saito2026boundary}
-K.~Saito.
-\newblock Integrated paper7 supporting package (historical NRR-Boundary source surface).
-\newblock Available at \url{https://github.com/kei-saito-research/nrr-boundary}. Manuscript and data publicly available, 2026. Commit \texttt{4cbb80c} accessed March 2026.
+\bibitem{saito2026patterns}
+K.~Saito,
+\newblock ``NRR-Patterns: Condition-Bounded Comparison of Five Delayed-Commitment Patterns in Stateful LLM Systems,''
+\newblock Unpublished manuscript. Repository surface:
+\url{https://github.com/kei-saito-research/nrr-patterns}.
 
 \bibitem{cover2006elements}
-T.~M. Cover and J.~A. Thomas.
-\newblock \emph{Elements of Information Theory}.
+T.~M. Cover and J.~A. Thomas,
+\newblock \emph{Elements of Information Theory},
 \newblock 2nd edition, Wiley-Interscience, 2006.
 
 \bibitem{tishby1999information}
-N.~Tishby, F.~C. Pereira, and W.~Bialek.
-\newblock The information bottleneck method.
+N.~Tishby, F.~C. Pereira, and W.~Bialek,
+\newblock ``The information bottleneck method,''
 \newblock In \emph{Proceedings of the 37th Annual Allerton Conference on Communication, Control, and Computing}, pages 368--377, 1999.
 
 \bibitem{hartley2004multiple}
-R.~Hartley and A.~Zisserman.
-\newblock \emph{Multiple View Geometry in Computer Vision}.
+R.~Hartley and A.~Zisserman,
+\newblock \emph{Multiple View Geometry in Computer Vision},
 \newblock 2nd edition, Cambridge University Press, 2004.
 
 \end{thebibliography}

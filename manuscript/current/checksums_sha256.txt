@@ -1,2 +1,0 @@
-12dbb85bc1dadf153775e77d5a8ca68570f24144331ad92aaffec886100b3f8f  nrr-projection_manuscript_v24.tex
-897108069896e40e117842f4df6cf33564dbfd15d142e09595900284c0c34459  nrr-projection_manuscript_v24.pdf
