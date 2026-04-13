@@ -1,36 +1,33 @@
 # NRR-Projection
 
-Local workspace for the `NRR-Projection` theory line.
-This line is positioned as a companion paper to `NRR-Phi` and a bridge paper connecting the Phi state ontology to the comparison-and-boundary surfaces now consolidated in `NRR-Patterns`, with downstream carry-forward into Energy and Guarantee while remaining a theory-first bridge line rather than an operational-control or assurance paper.
+NRR-Projection hosts the manuscript snapshot for the Projection theory line in the Non-Resolution Reasoning (NRR) research program. This repository is a manuscript-centered package: it provides the current paper source, compiled PDF, and stable verification scripts for the Projection line.
+
+NRR is not an anti-LLM framework.
+NRR does not replace standard LLM use.
+NRR optimizes when to commit and when to defer, under explicit conditions.
+
+## Key Artifacts
+
+- Current manuscript source:
+  - `manuscript/current/nrr-projection_manuscript_v28.tex`
+- Current manuscript PDF:
+  - `manuscript/current/nrr-projection_manuscript_v28.pdf`
+- Reproducibility guide:
+  - `reproducibility.md`
 
 ## Structure
 
-- `manuscript/current/`: latest-only manuscript source and compiled PDF
-- `manuscript/archive/`: prior manuscript versions kept for history
-
-## Current Manuscript
-
-- `manuscript/current/nrr-projection_manuscript_v27.tex`
-- `manuscript/current/nrr-projection_manuscript_v27.pdf`
-- `manuscript/checksums_active_review_surface_sha256.txt`
-- `manuscript/checksums_current_package_sha256.txt`
-- `manuscript/current/` keeps only the active `.tex` / `.pdf` pair.
+- `manuscript/current/`: current manuscript source and PDF
+- `manuscript/archive/`: earlier manuscript versions
+- `scripts/`: build and verification entrypoints
 
 ## Reproducibility
 
-- Build command: `bash scripts/build_current_manuscript.sh`
-- Active review surface verification: `bash scripts/verify_active_review_surface.sh`
-- Current package verification: `bash scripts/verify_current_package.sh`
-- This repository does not bundle Projection-specific experiment assets.
-- The manuscript's package-first reinterpretation cites historical Boundary evidence as an external source surface, but the current Projection repository package is limited to the manuscript and stable verification wrappers.
+See `reproducibility.md` for supported commands and the current artifact map.
 
-## Notes
-
-- This workspace is organized as a standalone git-managed line so Projection can be versioned independently from the parent workspace.
-- The parent workspace `.gitignore` ignores `nrr-*`, so this folder is intentionally managed as its own repository.
-- Reviewpack zip bundles are handoff artifacts and may be produced outside the committed git tree.
-
-Stable review-package entrypoints:
+Primary package entrypoints:
 - `bash scripts/build_current_manuscript.sh`
 - `bash scripts/verify_active_review_surface.sh`
 - `bash scripts/verify_current_package.sh`
+
+This repository does not bundle Projection-specific experiment assets in the current package.
